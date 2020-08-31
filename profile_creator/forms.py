@@ -9,6 +9,5 @@ class Profile_Form(forms.ModelForm):
         'first_name',
         'last_name',
         'nickname',
-        'email',
         'display_picture'
         ]

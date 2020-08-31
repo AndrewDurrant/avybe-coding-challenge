@@ -1,0 +1,19 @@
+{% extends 'profile_creator/create_view.html' %}
+{% block replace %}
+
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to AVYBE<br>Hello {{ user_pr.first_name }}</h1>
+  <p class="lead">that's an awesome profile picture</p>
+  <hr class="my-4">
+  <img src="{{ user_pr.display_picture.url }}" class="image_responsive" height="300px" width="auto">
+  <p>
+    {{ user_pr.display_picture.url }}<BR>
+  <p>Your nickname {{ user_pr.nickname}} is pretty great!</p>
+
+  <!-- This form does not display as of yet and I amd not sure this is where I want it -->
+  <p>Update your information by clicking below:</p>
+
+  <a class="btn btn-primary" href="/{{ user_pr.id }}/update">Update Info</a>
+  
+</div>
+{% endblock %}

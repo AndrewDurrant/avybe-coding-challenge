@@ -1,0 +1,16 @@
+<div class="main">
+  
+  {% for data in dataset %}.
+
+  {{ data.first_name }}<br />
+  {{ data.last_name }}<br />
+  {{ data.nickname }}<br />
+  <img src="{{ data.display_picture.url }}" class="image_responsive" height="300px" width="auto"><br />
+  <hr/>
+
+  {% endfor %}
+
+  <a class="btn btn-primary" href="/">New Profile</a>
+  <a class="btn btn-primary" href="/list">List Profiles</a>
+
+</div>

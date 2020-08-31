@@ -18,7 +18,7 @@ def create_profile(request):
             user_pr.save()
             return render(request, 'profile_creator/details.html', {'user_pr': user_pr})
     context = {"form": form,}
-    return render(request, 'profile_creator/create.html', context)
+    return render(request, 'profile_creator/create_view.html', context)
 
 
 def list_view(request):
