@@ -5,23 +5,23 @@
   </head>
   <body>
     <div class="jumbotron" style="padding: 2rem; ">
-      <div class="main">
-  
+      <section class="main">
+        <h1 style="border-bottom: 1px solid;">AVYBE PROFILES</h1>
         {% for data in dataset %}
-      
-        <p>First Name: {{ data.first_name }}</p><br />
-        <p>Last Name:{{ data.last_name }}</p><br />
-        <p>Nickname:{{ data.nickname }}</p><br />
-        <img src="{{ data.display_picture.url }}" class="image_responsive" height="300px" width="auto"  style="margin-bottom: 12px;">
-        <br />
-        <hr/>
+        <article style="border-bottom: 1px solid; margin-bottom: 12px;">
+          <p>First Name: {{ data.first_name }}</p><br />
+          <p>Last Name:{{ data.last_name }}</p><br />
+          <p>Nickname:{{ data.nickname }}</p><br />
+          <img src="{{ data.display_picture.url }}" class="image_responsive" height="300px" width="auto"  style="margin-bottom: 12px;"><br />
+          <hr/>
+        </article>
       
         {% endfor %}
       
         <a class="btn btn-primary" href="/">New Profile</a>
         <a class="btn btn-primary" href="/list">List Profiles</a>
       
-      </div>
+      </section>
     </div>
   </body>
 </html>

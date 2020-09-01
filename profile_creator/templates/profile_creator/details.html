@@ -1,7 +1,7 @@
 {% extends 'profile_creator/create_view.html' %}
 {% block replace %}
 
-<div class="jumbotron">
+<section class="jumbotron">
   <h1 class="display-4">Welcome to AVYBE<br>Hello {{ user_pr.first_name }}</h1>
   <p class="lead">that's an awesome profile picture</p>
   <hr class="my-4">
@@ -15,5 +15,5 @@
 
   <a class="btn btn-primary" href="/{{ user_pr.id }}/update">Update Info</a>
   
-</div>
+    </section>
 {% endblock %}

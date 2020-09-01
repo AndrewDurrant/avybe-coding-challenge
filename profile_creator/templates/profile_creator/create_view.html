@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
-    <div class="jumbotron" style="padding: 2rem; ">
+    <section class="jumbotron" style="padding: 2rem; ">
       <h1 class="display-4">AVYBE</h1>
         {% block replace %}
       <p class="lead">To create a user profile fill out the form below</p>
@@ -17,7 +17,7 @@
           {{ form.as_table }}
         </table>
         <input type="submit" class="btn btn-primary btn-md" name="register">
-    </div>
+      </section>
     {% endblock %}
   </body>
 </html>
