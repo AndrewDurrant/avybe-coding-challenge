@@ -1,12 +1,22 @@
-<div class="main">
-  <h1>{{ data.first_name }}'s Information</h1>
-  <!-- Display attributes of instance -->
-  {{ data.first_name }}<br />
-  {{ data.last_name }}<br />
-  {{ data.nickname }}<br />
-  <img src="{{ data.display_picture.url }}" class="image_responsive" height="300px" width="auto">
-  <br />
-  <a class="btn btn-primary" href="/{{ data.id }}/update">Update Profile</a>
-  <a class="btn btn-primary" href="/">New Profile</a>
-  <a class="btn btn-primary" href="/list">List Profiles</a>
-</div>
+<html>
+  <head>
+    <title>AVYBE PROFILE CREATOR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="jumbotron" style="padding: 2rem; ">
+      <div class="main">
+        <h1>{{ data.first_name }}'s Information</h1>
+        <!-- Display attributes of instance -->
+        <p>First Name: {{ data.first_name }}</p><br />
+        <p>Last Name:{{ data.last_name }}</p><br />
+        <p>Nickname:{{ data.nickname }}</p><br />
+        <img src="{{ data.display_picture.url }}" class="image_responsive" height="300px" width="auto"  style="margin-bottom: 12px;">
+        <br />
+        <a class="btn btn-primary" href="/{{ data.id }}/update">Update Profile</a>
+        <a class="btn btn-primary" href="/">New Profile</a>
+        <a class="btn btn-primary" href="/list">List Profiles</a>
+      </div>
+    </div>
+  </body>
+</html>
