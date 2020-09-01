@@ -9,8 +9,8 @@
         <h1>{{ data.first_name }}'s Information</h1>
         <!-- Display attributes of instance -->
         <p>First Name: {{ data.first_name }}</p><br />
-        <p>Last Name:{{ data.last_name }}</p><br />
-        <p>Nickname:{{ data.nickname }}</p><br />
+        <p>Last Name: {{ data.last_name }}</p><br />
+        <p>Nickname: {{ data.nickname }}</p><br />
         <img src="{{ data.display_picture.url }}" class="image_responsive" height="300px" width="auto"  style="margin-bottom: 12px;">
         <br />
         <a class="btn btn-primary" href="/{{ data.id }}/update">Update Profile</a>
